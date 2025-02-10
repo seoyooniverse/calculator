@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>수강료 계산기</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'IBM Plex Sans KR', Arial, sans-serif;
         }
         .calculator-container {
             max-width: 600px;
@@ -25,6 +26,7 @@
             text-align: center;
             color: #333;
             margin-bottom: 20px;
+            font-weight: 700;
         }
         .course-button {
             width: 100%;
@@ -36,6 +38,7 @@
             cursor: pointer;
             text-align: left;
             transition: all 0.3s ease;
+            font-family: 'IBM Plex Sans KR', Arial, sans-serif;
         }
         .course-button.selected {
             background: #0015b5;
@@ -44,12 +47,13 @@
         }
         .course-name {
             font-size: 18px;
-            font-weight: bold;
+            font-weight: 600;
             margin-bottom: 5px;
         }
         .course-description {
             font-size: 14px;
             opacity: 0.8;
+            font-weight: 400;
         }
         .course-tag {
             display: inline-block;
@@ -57,6 +61,7 @@
             border-radius: 12px;
             font-size: 12px;
             margin-top: 5px;
+            font-weight: 500;
         }
         .tag-required {
             background: #fee2e2;
@@ -67,7 +72,7 @@
             color: #16a34a;
         }
         .result-box {
-            background: #eff6ff;
+            background: #eceeff;
             padding: 20px;
             border-radius: 8px;
             margin-top: 20px;
@@ -80,12 +85,12 @@
         }
         .price-label {
             font-size: 18px;
-            font-weight: bold;
+            font-weight: 700;
             color: #0015b5;
         }
         .price-amount {
             font-size: 24px;
-            font-weight: bold;
+            font-weight: 700;
             color: #0015b5;
         }
         .savings-alert {
@@ -95,6 +100,7 @@
             border-radius: 6px;
             margin-top: 10px;
             display: none;
+            font-weight: 500;
         }
     </style>
 </head>
@@ -132,7 +138,7 @@
                     <div class="price-amount" id="totalPrice">0원</div>
                 </div>
                 <div class="savings-alert" id="savingsAlert">
-                    수강 할인 혜택: <span id="savingsAmount">0</span>원 절약!
+                    다과목 수강 할인 혜택: <span id="savingsAmount">0</span>원 절약!
                 </div>
             </div>
         </div>
